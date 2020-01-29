@@ -13,6 +13,7 @@
 		9B0D54BA23E18AB4000B2AE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B0D54B823E18AB4000B2AE9 /* Main.storyboard */; };
 		9B0D54BC23E18AB6000B2AE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B0D54BB23E18AB6000B2AE9 /* Assets.xcassets */; };
 		9B0D54BF23E18AB6000B2AE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B0D54BD23E18AB6000B2AE9 /* LaunchScreen.storyboard */; };
+		9B0D54C723E19A5A000B2AE9 /* TrafficLightController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0D54C623E19A5A000B2AE9 /* TrafficLightController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		9B0D54BB23E18AB6000B2AE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B0D54BE23E18AB6000B2AE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B0D54C023E18AB6000B2AE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B0D54C623E19A5A000B2AE9 /* TrafficLightController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				9B0D54B223E18AB4000B2AE9 /* AppDelegate.swift */,
 				9B0D54B423E18AB4000B2AE9 /* SceneDelegate.swift */,
 				9B0D54B623E18AB4000B2AE9 /* ViewController.swift */,
+				9B0D54C623E19A5A000B2AE9 /* TrafficLightController.swift */,
 				9B0D54B823E18AB4000B2AE9 /* Main.storyboard */,
 				9B0D54BB23E18AB6000B2AE9 /* Assets.xcassets */,
 				9B0D54BD23E18AB6000B2AE9 /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			files = (
 				9B0D54B723E18AB4000B2AE9 /* ViewController.swift in Sources */,
 				9B0D54B323E18AB4000B2AE9 /* AppDelegate.swift in Sources */,
+				9B0D54C723E19A5A000B2AE9 /* TrafficLightController.swift in Sources */,
 				9B0D54B523E18AB4000B2AE9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,7 +296,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.smartdragon.HW2-1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -309,7 +313,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.smartdragon.HW2-1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
