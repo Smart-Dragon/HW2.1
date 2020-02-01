@@ -7,28 +7,29 @@
 
 import UIKit
 
-class TrafficLightController: UIViewController {
+final class TrafficLightController: UIViewController {
 
+    // MARK: - IBOutlets
+    
     @IBOutlet weak var redLightView: UIView!
     @IBOutlet weak var yellowLightLabel: UIView!
     @IBOutlet weak var greenLightLabel: UIView!
     @IBOutlet weak var nextButton: UIButton!
     
-    var lightViews: [UIView] = []
-    var lightIndex = -1
-    let defaultOpacity: Float = 0.3
+    // MARK: - Private Properties
+    
+    private var lightViews: [UIView] = []
+    private var lightIndex = -1
+    private let defaultOpacity: Float = 0.3
+    
+    // MARK: - Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
     }
     
-    @IBAction func nextAction() {
-        nextButton.setTitle("NEXT", for: .normal)
-        resetAllLights()
-        lightIndex = getNextIndex(lightIndex)
-        lightViews[lightIndex].layer.opacity = 1
-    }
+    // MARK: - Private Methods
     
     private func setupUI() {
         setupLightView(view: redLightView, color: UIColor.red)
@@ -58,5 +59,14 @@ class TrafficLightController: UIViewController {
             nextIndex = 0
         }
         return nextIndex
+    }
+    
+    // MARK: - IBActions
+    
+    @IBAction func nextAction() {
+        nextButton.setTitle("NEXT", for: .normal)
+        resetAllLights()
+        lightIndex = getNextIndex(lightIndex)
+        lightViews[lightIndex].layer.opacity = 1
     }
 }
